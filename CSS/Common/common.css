@@ -1,0 +1,108 @@
+/* 
+====================================================
+Common CSS
+====================================================
+*/
+
+/* ****** 상단 메뉴 ****** */
+/* ********************* */
+* {
+    font-family: 'Noto Sans KR', 'NanumGothic', '나눔고딕', ng, 'Malgun Gothic', Gulim, Dotum, Sans-Serif !important;
+}
+header {
+    /* position: absolute; */
+    /* top: 35px; */
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    border-bottom: 1px solid #ffe655;
+    z-index: 1000;
+}
+
+/* header .width-container {
+    position: relative;
+    max-width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+} */
+header .width-container {
+    position: relative;
+    max-width: 1180px;
+    width: 100%;
+    inset: 0px;
+    margin: 0 auto;
+    display: flex;
+}
+
+header .width-container .logoBox {
+    /* position: relative;
+    display: inline-block;
+    padding-top: 40px;
+    z-index: 1; */
+}
+
+header .width-container .btnBox {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+header .width-container .btnBox a.codeBtn {
+    position: relative;
+    display: inline-block;
+    width: 116px;
+    height: 34px;
+    margin-top: 35px;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 32px;
+    text-decoration: none;
+    border-radius: 17px;
+    border: 1px solid #7e69fe;
+    background-color: #7e69fe;
+}
+
+header .width-container .btnBox a.codeBtn:hover {
+    background-color: #ffffff;
+    color: #7e69fe;
+}
+
+
+header .menu-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: 0;
+    text-align: center;
+}
+
+header .menu-container ul.menuBox {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header .menu-container ul.menuBox li {
+    display: inline-block;
+}
+
+header .menu-container ul.menuBox li a {
+    position: relative;
+    display: inline-block;
+    height: 100px;
+    padding: 0 40px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #888888;
+    text-align: center;
+    line-height: 100px;
+}
+
+header .menu-container ul.menuBox li a:hover {
+    color: #333333;
+    border-bottom: 3px solid #7e69fe;
+}
