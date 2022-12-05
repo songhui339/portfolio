@@ -1,0 +1,93 @@
+/* 
+====================================================
+mainPage CSS
+====================================================
+*/
+
+
+/* Section #01 Intro */
+.introSection {
+    background-color: rgb(244, 244, 250);
+    height: 70vh;
+}
+
+.introSection .titleWrap {
+    padding: 100px 0 50px 0;
+    display: flex;
+    flex-direction: initial;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.introSection .titleWrap p {
+    /* font-family: "esamanruBold" !important; */
+}
+
+.introSection .titleWrap img.profileImg {
+    background-color: #7e69fe50;
+    border-radius: 50%;
+    width: 250px;
+    margin-right: 25px;
+}
+
+.introSection .titleWrap .textBox {
+    width: 630px;
+    height: 90px;
+    display: inline-block;
+    margin-bottom: 0;
+    font-size: 2rem;
+    line-height: 1.5;
+    font-weight: 600;
+    text-align: left;
+    color: #7e69fe;
+    margin-left: 25px;
+    
+}
+
+
+/*
+    스크롤 다운 효과
+*/
+.scrollDown_new{
+    /* position: absolute; */
+    /* bottom: 1.8rem; */
+    /* left: 50%; */
+    /* transform: translate3d(-50%, 0, 0); */
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 0 0 0;
+
+}
+.scrollDown_new a {}
+
+.scrollDown_new a img {
+    margin: 0 auto;
+    width: 5rem;
+    -webkit-animation: sdb 2s infinite;
+    animation: sdb 2s infinite;
+}
+
+@-webkit-keyframes sdb {
+    0% {
+    -webkit-transform: translate(0, 0);
+    }
+    20% {
+    -webkit-transform: translate(0, 10px);
+    }
+    40% {
+    -webkit-transform: translate(0, 0);
+    }
+    }
+    @keyframes sdb {
+    0% {
+    transform: translate(0, 0);
+    }
+    20% {
+    transform: translate(0, 10px);
+    }
+    40% {
+    transform: translate(0, 0);
+    }
+}

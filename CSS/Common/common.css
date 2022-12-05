@@ -6,8 +6,36 @@ Common CSS
 
 /* ****** 상단 메뉴 ****** */
 /* ********************* */
+/* 
+@font-face {
+    font-family: "EliceDigitalBaeumBold";
+    src: url("/Font/EliceDigitalBaeumOTF_Bold.otf") format("truetype");
+}
+@font-face {
+    font-family: "EliceDigitalBaeumRegular";
+    src: url("/Font/EliceDigitalBaeumOTF_Regular.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "esamanruLight";
+    src: url("/Font/esamanruOTF_Light.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "esamanruMedium";
+    src: url("/Font/esamanruOTF_Medium.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "esamanruBold";
+    src: url("/Font/esamanruOTF_Bold.otf") format("truetype");
+} 
+*/
+
+
 * {
-    font-family: 'Noto Sans KR', 'NanumGothic', '나눔고딕', ng, 'Malgun Gothic', Gulim, Dotum, Sans-Serif !important;
+    font-family: 'Noto Sans KR', 'NanumGothic', '나눔고딕', Sans-Serif !important;
+    /* font-family: 'esamanruLight' !important; */
 }
 header {
     /* position: absolute; */
@@ -36,6 +64,7 @@ header .width-container {
 }
 
 header .width-container .logoBox {
+    text-align: center;
     /* position: relative;
     display: inline-block;
     padding-top: 40px;
