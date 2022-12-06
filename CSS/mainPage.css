@@ -14,7 +14,8 @@ mainPage CSS
 /* Section #01 Intro */
 .introSection {
     background-color: rgb(244, 244, 250);
-    height: 80vh;
+    /* height: 80vh; */
+    height: 90%;
 }
 
 .introSection .titleWrap {
@@ -62,7 +63,7 @@ mainPage CSS
     /* transform: translate3d(-50%, 0, 0); */
     margin: 0 auto;
     text-align: center;
-    padding: 50px 0 0 0;
+    padding: 50px 0 30px 0;
 
 }
 .scrollDown_new a {}
@@ -361,7 +362,8 @@ mainPage CSS
     background-color: #ffffff;
     padding: 50px;
     width: 65%;
-    height: 45vh;
+    /* height: 45vh; */
+    height: 50%;
     margin: 0 auto;
     border: 1px solid #7e69fe;
     border-radius: 15px;
