@@ -762,3 +762,41 @@ accordion li .textBox p #linkText:hover {
         right: 10px;
     }
 }
+
+/* Project Banner */
+.projectBanner {
+    padding: 50px 0;
+    background-color: #7e69fe;
+}
+
+.projectBanner .bannerBox {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: initial;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: space-between;
+}
+
+.projectBanner .bannerBox .text {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #FFE655;
+}
+
+.projectBanner .bannerBox .clickBtn {
+    background-color: #7e69fe;
+    color: #FFE655;
+    border: 5px solid #FFE655;
+    border-radius: 15px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 5px 30px;
+}
+
+.projectBanner .bannerBox .clickBtn:hover {
+    background-color: #FFE655;
+    color: #7e69fe;
+}
