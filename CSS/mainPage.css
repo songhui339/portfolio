@@ -4,6 +4,12 @@ mainPage CSS
 ====================================================
 */
 
+/* 반응형 작업을 위한 PC용 SECTION 숨김처리 */
+@media screen and (max-width: 980px) {
+    header, .introSection, .aboutSection, .careerSection, .moreSection {
+        display: none;
+    }
+}
 
 /* Section #01 Intro */
 .introSection {
@@ -227,4 +233,57 @@ mainPage CSS
 .aboutSection .profileContainer .btnBox .modalBtn:hover {
     background-color: #7E69FE;
     color: #ffffff;
+}
+
+/* 취미, 성격, 외국어 모달창 CSS */
+.modal .modal-content .modalTitle {
+    border-bottom: none !important;
+    padding: 30px 20px 10px 20px;
+}
+
+.modal .modal-content .modalTitle .titleText {
+    height: auto;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 31.5px;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #7e69fe;
+}
+
+.modal .modal-content .modalInfo {
+    text-align: center;
+}
+
+.modal .modal-content .modalInfo>img {
+    width: 70%;
+    border-radius: 15px;
+}
+
+.modal .modal-content .modalInfo .text {
+    font-size: 1rem;
+    line-height: 1.3;
+    padding-top: 30px;
+}
+
+.modal .modal-footer.btnBox {
+    margin-top: 20px;
+    border-top: none !important;
+    padding-bottom: 30px;
+}
+
+.modal .modal-footer.btnBox .closeBtn {
+    cursor: pointer;
+    width: 100%;
+    height: 56px;
+    border-radius: 10px;
+    background-color: #7E69FE;
+    font-size: 16px;
+    line-height: 19px;
+    border: none;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }

@@ -37,6 +37,15 @@ Common CSS
     font-family: 'Noto Sans KR', 'NanumGothic', '나눔고딕', Sans-Serif !important;
     /* font-family: 'esamanruLight' !important; */
 }
+
+.c_purple {
+    color: #7e69fe;
+}
+
+.t_bold {
+    font-weight: 600;
+}
+
 header {
     position: fixed;
     /* top: 35px; */
