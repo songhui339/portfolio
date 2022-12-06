@@ -23,14 +23,14 @@ jQuery(document).ready(function ($) {
 
 
     // 이미지 슬라이드
-    let imgIndex = 0;
-    let position = 0;
-    const IMG_WIDTH = 450;
-    const $btnPrev = document.querySelector(".btn-prev");
-    const $btnNext = document.querySelector(".btn-next");
-    const $slideImgs = document.querySelector(".imgList");
+    var imgIndex = 0;
+    var position = 0;
+    var IMG_WIDTH = 450;
+    var $btnPrev = document.querySelector(".btn-prev");
+    var $btnNext = document.querySelector(".btn-next");
+    var $slideImgs = document.querySelector(".imgList");
 
-    let prev = function () {
+    var prev = function () {
     if (imgIndex > 0) {
         $btnNext.removeAttribute("disabled");
         position += IMG_WIDTH;
@@ -42,7 +42,7 @@ jQuery(document).ready(function ($) {
     }
     };
 
-    let next = function () {
+    var next = function () {
     if (imgIndex < 3) {
         $btnPrev.removeAttribute("disabled");
         position -= IMG_WIDTH;
@@ -55,12 +55,69 @@ jQuery(document).ready(function ($) {
     }
     };
 
-    let init = function () {
+    var init = function () {
     $btnPrev.setAttribute("disabled", "true");
     $btnPrev.addEventListener("click", prev);
     $btnNext.addEventListener("click", next);
     };
 
     init();
+
+    
+});
+
+// Skills 탭
+jQuery(document).ready(function ($) {
+    var btnAll = $('.skillTabRow_01 .btn_container section .btnBox');
+    var tabAll = $('.skillTabRow_02 .detail_container');
+    
+    
+    // 프론트엔드
+    $('#skillTabIcon_01').click(function () {
+        if ($(this).hasClass('active') === false) {
+            // 초기화
+            btnAll.removeClass('active');
+            tabAll.removeClass('active');
+            // 활성화
+            $(this).addClass('active');
+            $('#skillTabInfo_01').addClass('active');
+        }
+    });
+    
+    // 백엔드
+    $('#skillTabIcon_02').click(function () {
+        if ($(this).hasClass('active') === false) {
+            // 초기화
+            btnAll.removeClass('active');
+            tabAll.removeClass('active');
+            // 활성화
+            $(this).addClass('active');
+            $('#skillTabInfo_02').addClass('active');
+        }
+    });
+    
+    // 디자인
+    $('#skillTabIcon_03').click(function () {
+        if ($(this).hasClass('active') === false) {
+            // 초기화
+            btnAll.removeClass('active');
+            tabAll.removeClass('active');
+            // 활성화
+            $(this).addClass('active');
+            $('#skillTabInfo_03').addClass('active');
+        }
+    });
+    
+    // 커뮤니케이션
+    $('#skillTabIcon_04').click(function () {
+        if ($(this).hasClass('active') === false) {
+            // 초기화
+            btnAll.removeClass('active');
+            tabAll.removeClass('active');
+            // 활성화
+            $(this).addClass('active');
+            $('#skillTabInfo_04').addClass('active');
+        }
+    });
 
 });

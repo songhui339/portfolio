@@ -6,7 +6,7 @@ mainPage CSS
 
 /* 반응형 작업을 위한 PC용 SECTION 숨김처리 */
 @media screen and (max-width: 980px) {
-    header, .introSection, .aboutSection, .careerSection, .moreSection {
+    header, .introSection, .aboutSection, .skillsSection, .careerSection, .moreSection {
         display: none;
     }
 }
@@ -97,6 +97,22 @@ mainPage CSS
     }
 }
 
+/* Section 타이틀 텍스트 */
+.section_common {
+    padding: 100px 0;
+}
+
+.section_common .titleTextBox {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section_common .titleTextBox .titleText {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #7e69fe;
+    padding-bottom: 50px;
+}
 
 /* Section #02 About */
 .aboutSection {
@@ -256,7 +272,7 @@ mainPage CSS
 }
 
 .modal .modal-content .modalInfo>img {
-    width: 70%;
+    width: 80%;
     border-radius: 15px;
 }
 
@@ -286,4 +302,243 @@ mainPage CSS
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+}
+
+/* Section #03 Skills */
+.skillsSection {
+    background-color: rgb(244, 244, 250);
+}
+
+/* tab 관련 버튼 */
+/* 버튼 */
+.skillsSection .skillTabRow_01 .btn_container {}
+.skillsSection .skillTabRow_01 .btn_container section {
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    margin: 20px auto 50px auto;
+    position: relative;
+}
+
+.skillsSection .skillTabRow_01 .btn_container section .btnBox{
+    background-color: #ffffff;
+    cursor: pointer;
+    /* width: 15%; */
+}
+
+/* .skillsSection .skillTabRow_01 .btn_container section .btnBox:hover {
+    box-shadow: 0.4rem 0.4rem 1.2rem 0 rgba(5, 65, 184, 0.12);
+} */
+
+
+.skillsSection .skillTabRow_01 .btn_container section .btnBox .textItem {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skillsSection .skillTabRow_01 .btn_container section .btnBox .textItem p {
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #1f1f1f;
+    margin-bottom: 0;
+    border-radius: 15px;
+    border: 1px solid #7e69fe;
+    width: 200px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.skillsSection .skillTabRow_01 .btn_container section .btnBox.active .textItem p  {
+    color: #ffffff;
+    background-color: #7e69fe;
+}
+
+.skillsSection .skillTabRow_02 .detail_container {
+    background-color: #ffffff;
+    padding: 50px;
+    width: 67%;
+    height: 45vh;
+    margin: 0 auto;
+    border: 1px solid #7e69fe;
+    border-radius: 15px;
+    display: none;
+}
+
+.skillsSection .skillTabRow_02 .detail_container.active {
+    display: block;
+}
+
+.skillsSection .skillTabRow_02 .detail_container .graphBar_container {}
+
+.skillsSection .skillTabRow_02 .detail_container .graphBar_container .graph {
+    height: 40px;
+    background-color: lightgray;
+    margin-bottom: 10px;
+}
+
+.skillsSection .skillTabRow_02 .detail_container .graphBar_container .graph .category {
+    position: absolute;
+    color: #ffffff;
+    margin: 10px;
+}
+
+.skillsSection .skillTabRow_02 .detail_container .graphBar_container .graph .percent {
+    display: block;
+    padding: 0 10px;
+    height: 40px;
+    line-height: 40px;
+    text-align: right;
+    background-color: #7e69fe;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+
+/* 그래프 애니메이션 효과 */
+/* 90% - ver 1 */
+.skillsSection .skillTabRow_02 .detail_container .graphBar_container .graph .percent.stack901 {
+    animation: stack901 2s 1;
+}
+
+/* 90% - ver 2 */
+.skillsSection .skillTabRow_02 .detail_container .graphBar_container .graph .percent.stack902 {
+    animation: stack902 3s 1;
+}
+
+/* 80% */
+.skillsSection .skillTabRow_02 .detail_container .graphBar_container .graph .percent.stack80 {
+    animation: stack80 2s 1;
+}
+
+/* 70% */
+.skillsSection .skillTabRow_02 .detail_container .graphBar_container .graph .percent.stack70 {
+    animation: stack70 3s 1;
+}
+
+/* 60% */
+.skillsSection .skillTabRow_02 .detail_container .graphBar_container .graph .percent.stack60 {
+    animation: stack60 2s 1;
+}
+
+/* 55% */
+.skillsSection .skillTabRow_02 .detail_container .graphBar_container .graph .percent.stack55 {
+    animation: stack55 2s 1;
+}
+
+@keyframes stack901 {
+    0% {
+        width: 0;
+        color: rbga(255, 255, 255, 0);
+    }
+
+    30% {
+        color: rgba(255, 255, 255, 1);
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes stack902 {
+    0% {
+        width: 0;
+        color: rbga(255, 255, 255, 0);
+    }
+
+    30% {
+        color: rgba(255, 255, 255, 1);
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes stack80 {
+    0% {
+        width: 0;
+        color: rbga(255, 255, 255, 0);
+    }
+
+    30% {
+        color: rgba(255, 255, 255, 1);
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes stack70 {
+    0% {
+        width: 0;
+        color: rbga(255, 255, 255, 0);
+    }
+
+    30% {
+        color: rgba(255, 255, 255, 1);
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes stack60 {
+    0% {
+        width: 0;
+        color: rbga(255, 255, 255, 0);
+    }
+
+    30% {
+        color: rgba(255, 255, 255, 1);
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes stack55 {
+    0% {
+        width: 0;
+        color: rbga(255, 255, 255, 0);
+    }
+
+    30% {
+        color: rgba(255, 255, 255, 1);
+    }
+
+    100% {
+        width: 55%;
+    }
+}
+
+
+.skillsSection .skillTabRow_02 .detail_container .more_container {
+    display: flex;
+    flex-direction: initial;
+    justify-content: flex-start;
+    margin-top: 30px;
+}
+
+.skillsSection .skillTabRow_02 .detail_container .more_container .itemBox {
+    margin-right: 50px;
+    display: flex;
+    width: 50%;
+}
+
+.skillsSection .skillTabRow_02 .detail_container .more_container .itemBox>img {
+    /* width: 50px; */
+    height: 50px;
+    margin-right: 10px;
+}
+
+.skillsSection .skillTabRow_02 .detail_container .more_container .itemBox .text {
+    display: inline-block;
+    line-height: 1.5;
+    font-size: 1rem;
 }

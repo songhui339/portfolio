@@ -38,6 +38,12 @@ Common CSS
     /* font-family: 'esamanruLight' !important; */
 }
 
+::selection {
+	background-color : #ffed99;
+	color : #7e69fe;
+}
+
+
 .c_purple {
     color: #7e69fe;
 }
@@ -143,4 +149,18 @@ header .menu-container ul.menuBox li a {
 header .menu-container ul.menuBox li a:hover {
     color: #333333;
     border-bottom: 3px solid #7e69fe;
+}
+
+
+footer {
+    background-color: #f7f7f7;
+    padding: 50px 0;
+}
+
+footer .footerText {
+    width: 90%;
+    text-align: right;
+    color: #666666;
+    font-weight: 600;
+    font-size: 0.9rem;
 }
