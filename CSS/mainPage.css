@@ -39,7 +39,7 @@ mainPage CSS
 }
 
 .introSection .titleWrap .textBox {
-    width: 400px;
+    width: 420px;
     height: 90px;
     display: inline-block;
     margin-bottom: 0;
@@ -321,7 +321,7 @@ mainPage CSS
 }
 
 .skillsSection .skillTabRow_01 .btn_container section .btnBox{
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     cursor: pointer;
     /* width: 15%; */
 }
@@ -345,6 +345,7 @@ mainPage CSS
     color: #1f1f1f;
     margin-bottom: 0;
     border-radius: 15px;
+    background-color: #ffffff;
     border: 1px solid #7e69fe;
     width: 200px;
     text-align: center;
@@ -541,4 +542,223 @@ mainPage CSS
     display: inline-block;
     line-height: 1.5;
     font-size: 1rem;
+}
+
+/* Section #04 Career */
+.careerSection {}
+
+.careerSection .accordionBox {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.careerSection .accordionBox div {
+    /* 50px */
+    /* padding-top: 3.4rem; */
+    max-width: 80rem; /* 1200px */
+    margin: 0 auto;
+}
+.careerSection .accordionBox div .inner_box {}
+.careerSection .accordionBox div ul.accordion{
+    list-style: none;
+    padding: 0;
+}
+
+.careerSection .accordionBox .accordion li {}
+
+/* Q */
+.careerSection .accordionBox .accordion li a {
+    position: relative;
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: -0.5px;
+    color: #666666 !important;
+    text-decoration: none;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    padding: 1.5rem 1.4rem 1.5rem 3.4rem;
+    /* border-top: 0.5px solid #1f1f1f; */
+    /* border-bottom: 0.5px solid #1f1f1f; */
+    /* background-color: #7e69fe; */
+    cursor: pointer;
+    border: solid 1px #e3e1ee;
+    cursor: pointer;
+}
+
+.careerSection .accordionBox .accordion li:hover a,
+.careerSection .accordionBox .accordion li a.active {
+    border: solid 1px #cec8f1;
+    background-color: #f9f8ff;
+    color: #7e69fe !important;
+}
+
+.careerSection .accordionBox .accordion li a span.date {
+    margin-right: 20px;
+}
+
+.careerSection .accordionBox .accordion li a span.companyName {
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+/* A */
+.careerSection .accordionBox .accordion li .textBox {
+    display: none;
+    /* border: 1px solid #E9E9E9;
+    background-color: #ffffff; */
+    padding: 0.6rem 3.4rem 1.6rem 3.4rem;
+}
+.careerSection .accordionBox .accordion li .textBox p {
+    font-size: 1rem; /* 14px */
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: -0.5px;
+    color: #1f1f1f;
+    position: relative;
+}
+
+accordion li .textBox p #linkText {
+	color: rgb(73, 119, 245);
+}
+
+accordion li .textBox p #linkText:hover {
+	background-color: #7e69fe;
+	color: #ffffff;
+}
+
+.careerSection .accordionBox .accordion li .textBox p span.title {
+    font-size: 1rem;
+    position: absolute;
+    top: 0;
+    left: -1.2rem;
+} 
+
+.careerSection .accordionBox .accordion li .textBox p .accordion_text_sub {
+    display: block;
+    font-size: 0.8rem; /* 12px */
+    color: #B4B4B4;
+    padding-top: 0.667rem /* 10px */
+}
+
+.careerSection .accordionBox .accordion li a::after, .careerSection .accordionBox .accordion li a.active::after {
+    content: " ";
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 0.8rem; /* 12px */
+    height: 0.8rem; /* 12px */
+    top: 50%;
+    right: 24px;
+    transform: translateY(-50%);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.careerSection .accordionBox .accordion li a::after {
+    /* background-image: url('${path}/images/common/icon_toggleDown_white.png'); */
+}
+
+.careerSection .accordionBox .accordion li a.active::after {
+    /* background-image: url('${path}/images/common/icon_toggleUp_white.png'); */
+}
+
+/* **** */
+@media screen and (max-width: 980px) {
+
+    .careerSection {
+        padding: 70px 0 !important;
+    }
+
+    .careerSection .accordionBox div {
+        padding-top: 50px;
+        max-width: 520px;
+    }
+
+    /* Q */
+    .careerSection .accordionBox .accordion li a {
+        font-size: 16px;
+        padding: 14px 20px 14px 50px;
+    }
+    .careerSection .accordionBox .accordion li a span.title {
+        font-size: 20px;
+        top: 12px;
+        left: 24px;
+    }
+
+    /* A */
+    .careerSection .accordionBox .accordion li .textBox {
+        padding: 24px 50px;
+    }
+    .careerSection .accordionBox .accordion li .textBox p {
+        font-size: 14px;
+    }
+    .careerSection .accordionBox .accordion li .textBox p span.title {
+        font-size: 15px;
+        left: -18px;
+    }
+
+    .careerSection .accordionBox .accordion li .textBox p .accordion_text_sub {
+        font-size: 12px;
+        padding-top: 10px;
+    }
+
+    .careerSection .accordionBox .accordion li a::after, .careerSection .accordionBox .accordion li a.active::after {
+        width: 12px;
+        height: 12px;
+        right: 24px;
+    }
+}
+
+
+
+@media all and (max-width: 767px) {
+
+    .careerSection {
+        padding: 50px 0 !important;
+    }
+    .careerSection {
+        width: 90%;
+    }
+    /* ****** */
+    .careerSection .accordionBox div {
+        padding-top: 20px;
+        max-width: 100%;
+    }
+
+    /* Q */
+    .careerSection .accordionBox .accordion li a {
+        font-size: 14px;
+        padding: 14px 10px 14px 30px;
+    }
+    .careerSection .accordionBox .accordion li a span.title {
+        font-size: 16px;
+        top: 14px;
+        left: 10px;
+    }
+
+    /* A */
+    .careerSection .accordionBox .accordion li .textBox {
+        padding: 20px 10px 20px 30px;
+    }
+    .careerSection .accordionBox .accordion li .textBox p {
+        font-size: 13px;
+    }
+    .careerSection .accordionBox .accordion li .textBox p span.title {
+        font-size: 14px;
+        left: -16px;
+    }
+
+    .careerSection .accordionBox .accordion li .textBox p .accordion_text_sub {
+        font-size: 12px;
+        padding-top: 10px;
+    }
+
+    .careerSection .accordionBox .accordion li a::after, .careerSection .accordionBox .accordion li a.active::after {
+        width: 10px;
+        height: 10px;
+        right: 10px;
+    }
 }

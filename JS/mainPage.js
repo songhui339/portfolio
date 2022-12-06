@@ -5,8 +5,12 @@ mainPage JavaScript
 */
 jQuery(document).ready(function ($) {
 
-    // 타이핑 효과
-    var content = "안녕하세요 :-) \n 개발뽀시래기 최송희입니다.";
+    /*
+    ===================
+    타이핑 효과
+    ===================
+    */
+    var content = "안녕하세요 :-) \n 개발자를 꿈꾸는 최송희입니다.";
     var text = document.querySelector(".text");
     var i = 0;
 
@@ -20,9 +24,11 @@ jQuery(document).ready(function ($) {
     }
     setInterval(typing, 240)
 
-
-
-    // 이미지 슬라이드
+    /*
+    ===================
+    이미지 슬라이드
+    ===================
+    */
     var imgIndex = 0;
     var position = 0;
     var IMG_WIDTH = 450;
@@ -66,7 +72,11 @@ jQuery(document).ready(function ($) {
     
 });
 
-// Skills 탭
+/*
+===================
+Skills 탭
+===================
+*/
 jQuery(document).ready(function ($) {
     var btnAll = $('.skillTabRow_01 .btn_container section .btnBox');
     var tabAll = $('.skillTabRow_02 .detail_container');
@@ -119,5 +129,29 @@ jQuery(document).ready(function ($) {
             $('#skillTabInfo_04').addClass('active');
         }
     });
+
+});
+
+/*
+===================
+Career 아코디언
+===================
+*/
+jQuery(document).ready(function ($) {
+
+	$(".accordion > li:eq(0) a").addClass("active").next().slideDown();
+
+	$(".accordion a").click(function (e) {
+		var dropDown = $(this).closest("li").find(".textBox");
+		$(this).closest(".accordion").find(".textBox").not(dropDown).slideUp();
+		if ($(this).hasClass("active")) {
+			$(this).removeClass("active");
+		} else {
+			$(this).closest(".accordion").find("a.active").removeClass("active");
+			$(this).addClass("active");
+		}
+		dropDown.stop(false, true).slideToggle();
+		e.preventDefault();
+	});
 
 });
