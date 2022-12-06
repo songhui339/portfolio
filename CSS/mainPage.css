@@ -8,11 +8,11 @@ mainPage CSS
 /* Section #01 Intro */
 .introSection {
     background-color: rgb(244, 244, 250);
-    height: 70vh;
+    height: 85vh;
 }
 
 .introSection .titleWrap {
-    padding: 100px 0 50px 0;
+    padding: 200px 0 50px 0;
     display: flex;
     flex-direction: initial;
     -webkit-box-align: center;
@@ -33,7 +33,7 @@ mainPage CSS
 }
 
 .introSection .titleWrap .textBox {
-    width: 630px;
+    width: 400px;
     height: 90px;
     display: inline-block;
     margin-bottom: 0;
@@ -45,7 +45,6 @@ mainPage CSS
     margin-left: 25px;
     
 }
-
 
 /*
     스크롤 다운 효과
@@ -90,4 +89,142 @@ mainPage CSS
     40% {
     transform: translate(0, 0);
     }
+}
+
+
+/* Section #02 About */
+.aboutSection {
+    padding: 100px 0;
+}
+
+.aboutSection .titleTextBox {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.aboutSection .titleTextBox .titleText {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #7e69fe;
+    padding-bottom: 50px;
+}
+
+.aboutSection .profileContainer {
+    display: flex;
+    flex-direction: initial;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+
+.aboutSection .profileContainer .imgSlideBox {
+    width: 450px;
+    margin-right: 25px;
+    /* margin: 0 auto; */
+}
+
+.aboutSection .profileContainer .imgSlideBox .imgSlide {
+    position: relative;
+    width: 450px;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.aboutSection .profileContainer .imgSlideBox .imgSlide .imgList {
+    position: relative;
+    display: flex;
+    height: 450px;
+}
+
+.aboutSection .profileContainer .imgSlideBox .imgSlide .imgList img {
+    width: 450px;
+    height: 450px;
+}
+
+.aboutSection .profileContainer .imgSlideBox .imgSlide .btn-next,
+.aboutSection .profileContainer .imgSlideBox .imgSlide .btn-next:active,
+.aboutSection .profileContainer .imgSlideBox .imgSlide .btn-next:focus {
+    position: absolute;
+    padding: 8px 10px;
+    background-color: #7e69fe;
+    color: #ffffff;
+    border: none;
+    font-size: 18px;
+    border-radius: 100%;
+}
+
+.aboutSection .profileContainer .imgSlideBox .imgSlide .btn-prev,
+.aboutSection .profileContainer .imgSlideBox .imgSlide .btn-prev:active,
+.aboutSection .profileContainer .imgSlideBox .imgSlide .btn-prev:focus {
+    position: absolute;
+    padding: 8px 10px;
+    background-color: #7e69fe;
+    color: #ffffff;
+    border: none;
+    font-size: 20px;
+    border-radius: 100%;
+}
+
+.aboutSection .profileContainer .imgSlideBox .imgSlide .btn-next:disabled,
+.aboutSection .profileContainer .imgSlideBox .imgSlide .btn-prev:disabled {
+    background-color: #999999;
+}
+
+.aboutSection .profileContainer .imgSlideBox .imgSlide .btn-next:hover,
+.aboutSection .profileContainer .imgSlideBox .imgSlide.btn-prev:hover {
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #7e69fe;
+    transition: 0.7s ease-out;
+}
+
+.aboutSection .profileContainer .imgSlideBox .imgSlide .btn-prev {
+    left: 18px;
+    top: 50%;
+}
+.aboutSection .profileContainer .imgSlideBox .imgSlide .btn-next {
+    right: 18px;
+    top: 50%;
+}
+
+.aboutSection .profileContainer .infoBox {
+    margin-left: 25px;
+}
+
+.aboutSection .profileContainer .infoBox .textArea {}
+
+.aboutSection .profileContainer .infoBox .textArea .textTable {}
+
+.aboutSection .profileContainer .infoBox .textArea .textTable tr {
+    /* height: 40px; */
+    font-size: 1.5rem;
+    line-height: 2;
+}
+
+.aboutSection .profileContainer .infoBox .textArea .textTable th {
+    width: 150px;
+    font-weight: 600;
+    color: #7e69fe;
+}
+
+.aboutSection .profileContainer .btnBox {
+    margin-top: 30px;
+}
+
+.aboutSection .profileContainer .btnBox .modalBtn {
+    font-size: 1.3rem;
+    width: 150px;
+    background: #ffffff;
+    color: #7E69FE;
+    border: 1px solid #7E69FE;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    margin-right: 15px;
+}
+
+.aboutSection .profileContainer .btnBox .modalBtn:hover {
+    background-color: #7E69FE;
+    color: #ffffff;
 }

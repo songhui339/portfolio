@@ -38,7 +38,7 @@ Common CSS
     /* font-family: 'esamanruLight' !important; */
 }
 header {
-    /* position: absolute; */
+    position: fixed;
     /* top: 35px; */
     left: 0;
     width: 100%;
@@ -65,10 +65,10 @@ header .width-container {
 
 header .width-container .logoBox {
     text-align: center;
-    /* position: relative;
+    position: relative;
     display: inline-block;
     padding-top: 40px;
-    z-index: 1; */
+    z-index: 1;
 }
 
 header .width-container .btnBox {

@@ -25,10 +25,10 @@
 <body>
     <header>
         <div class="width-container">
-            <div class="logoBox">
+            <!-- <div class="logoBox">
                 <a href="javascript:">
-                    <img src="./Images/icon_unicon.png" alt="loogo" title="" style="width: 33%;"></a>
-            </div>
+                    <img src="./Images/icon_planet.png" alt="loogo" title="" style="width: 15%;"></a>
+            </div> -->
 
             <div class="btnBox">
                 <a href="javascript:" class="codeBtn"><i class="bi bi-github"></i> Code</a>
@@ -38,19 +38,19 @@
         <div class="menu-container">
             <ul class="menuBox">
                 <li>
-                    <a href="javascript:">About</a>
+                    <a href="#about">About</a>
                 </li>
                 <li>
-                    <a href="javascript:">Skills</a>
+                    <a href="#skills">Skills</a>
                 </li>
                 <li>
-                    <a href="javascript:">Career</a>
+                    <a href="#career">Career</a>
                 </li>
                 <li>
                     <a href="javascript:">Project</a>
                 </li>
                 <li>
-                    <a href="javascript:">More</a>
+                    <a href="#more">More</a>
                 </li>
             </ul>
         </div>
@@ -69,7 +69,7 @@
         </div>
 
         <div class="scrollDown_new">
-            <a href="#About">
+            <a href="#about">
                 <img src="./Images/icon_scrollDown.png" alt="scrollDown icon">
             </a>
         </div>
@@ -79,7 +79,57 @@
         
     </section>
 
-    <section style="padding:100px 0;"></section>
+    <!-- Section #02 About -->
+    <section class="aboutSection" id="about">
+        <div class="titleTextBox">
+            <p class="titleText">
+                About
+            </p>
+        </div>
+
+        <div class="profileContainer">
+            <div class="imgSlideBox">
+                    <div class="imgSlide">
+                        <div class="imgList">
+                            <img src="./Images/img_profile_01.jpg" alt="photo" />
+                            <img src="./Images/img_profile_02.jpg" alt="photo" />
+                            <img src="./Images/img_profile_03.jpg" alt="photo" />
+                        </div>
+                        <button class="btn-next"><i class="bi bi-caret-right-fill"></i></button>
+                        <button class="btn-prev"><i class="bi bi-caret-left-fill"></i></button>
+                    </div>
+            </div>
+
+            <div class="infoBox">
+                <div class="textArea">
+                    <table class="textTable">
+                        <tr>
+                            <th>이름</th>
+                            <td>최송희</td>
+                        </tr>
+                        <tr>
+                            <th>생년월일</th>
+                            <td>1994.04.09</td>
+                        </tr>
+                        <tr>
+                            <th>학력</th>
+                            <td>
+                                🎓 한영외국어고등학교 (일본어과)<br>
+                                🎓 Doshisha University (사회학과 학사)
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="btnBox">
+                    <button class="btn modalBtn">⚾️ 취미</button>
+                    <button class="btn modalBtn">👯‍♀️ 성격</button>
+                    <button class="btn modalBtn">🌍 외국어</button>
+
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <!-- BootStrap JS -->
