@@ -800,3 +800,57 @@ accordion li .textBox p #linkText:hover {
     background-color: #FFE655;
     color: #7e69fe;
 }
+
+
+/* Section #05 More */
+.moreSection .flipCard_container div {
+    width: 500px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.cardBox {
+    margin: 20px;
+    perspective: 1000px;
+}
+
+.flipCard {
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.front, .back {
+    position: absolute;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    backface-visibility: hidden;
+    padding: 30px;
+}
+
+.front {
+    background-color: #F4F4FA;
+    justify-content: space-between;
+}
+
+.front .leftTop_text {
+    /* align-items: flex-start; */
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #7e69fe;
+}
+
+.front .rightBtm_text {
+    display: flex;
+    align-items: flex-end;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #7e69fe;
+}
+
+.back {
+    background-color: #7e69fe;
+    transform: rotateY(180deg);
+}
