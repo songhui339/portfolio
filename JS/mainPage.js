@@ -162,16 +162,15 @@ Flip Card
 ===================
 */
 jQuery(document).ready(function ($) {
-    let card = document.querySelector('.flipCard');
-    card.addEventListener('click', click);
-
-
-function click(event) {
-  let elem = event.currentTarget;
-  if (elem.style.transform == "rotateY(180deg)") {
-            elem.style.transform = "rotateY(0deg)";
-        } else {
-            elem.style.transform = "rotateY(180deg)";
+    var btn = document.querySelector('.flipBtn');
+    btn.addEventListener('click', click);
+    
+    function click(event) {
+        var card = document.querySelector('.flipCard');
+        if (card.style.transform == "rotateY(180deg)") {
+            card.style.transform = "rotateY(0deg)";
+                } else {
+                    card.style.transform = "rotateY(180deg)";
         }
     }
 });

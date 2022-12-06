@@ -14,7 +14,7 @@ mainPage CSS
 /* Section #01 Intro */
 .introSection {
     background-color: rgb(244, 244, 250);
-    height: 85vh;
+    height: 80vh;
 }
 
 .introSection .titleWrap {
@@ -360,7 +360,7 @@ mainPage CSS
 .skillsSection .skillTabRow_02 .detail_container {
     background-color: #ffffff;
     padding: 50px;
-    width: 67%;
+    width: 65%;
     height: 45vh;
     margin: 0 auto;
     border: 1px solid #7e69fe;
@@ -818,7 +818,7 @@ accordion li .textBox p #linkText:hover {
     position: relative;
     transition: transform 1s;
     transform-style: preserve-3d;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .front, .back {
@@ -827,10 +827,10 @@ accordion li .textBox p #linkText:hover {
     /* justify-content: center;
     align-items: center; */
     backface-visibility: hidden;
-    padding: 30px;
 }
 
 .front {
+    padding: 30px;
     background-color: #F4F4FA;
     justify-content: space-between;
 }
@@ -851,6 +851,42 @@ accordion li .textBox p #linkText:hover {
 }
 
 .back {
+    padding: 50px;
     background-color: #7e69fe;
     transform: rotateY(180deg);
+    align-items: center;
+}
+
+.back .linkWrap {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.back .linkWrap a {
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    color: #ffffff;
+}
+
+.back .linkWrap a:hover {
+    color: #FFE655;
+    /* text-decoration: underline; */
+    font-weight: 500;
+}
+
+.moreSection .btnBox {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.moreSection .btnBox .flipBtn {
+    background-color: #ffffff;
+    color: #7e69fe;
+    border: 5px solid #7e69fe;
+    border-radius: 15px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 5px 30px;
 }
