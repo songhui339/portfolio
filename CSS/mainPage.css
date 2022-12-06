@@ -316,7 +316,7 @@ mainPage CSS
 .skillsSection .skillTabRow_01 .btn_container section {
     display: flex;
     justify-content: space-evenly;
-    width: 70%;
+    width: 60%;
     margin: 20px auto 50px auto;
     position: relative;
 }
@@ -361,7 +361,7 @@ mainPage CSS
 .skillsSection .skillTabRow_02 .detail_container {
     background-color: #ffffff;
     padding: 50px;
-    width: 65%;
+    width: 60%;
     /* height: 45vh; */
     height: 50%;
     margin: 0 auto;

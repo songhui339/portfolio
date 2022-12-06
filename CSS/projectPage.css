@@ -1,0 +1,88 @@
+/* 
+====================================================
+projectPage CSS
+====================================================
+*/
+
+.projectSection {
+    background-color: rgb(244, 244, 250);
+    padding: 200px 0 100px 0;
+}
+
+.projectSection .titleTextBox {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.projectSection .titleTextBox .titleText {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #7e69fe;
+    /* padding-bottom: 50px; */
+}
+
+.projectSection .projectContainer {
+    margin: 50px auto 0 auto;
+    width: 60%;
+    background-color: #ffffff;
+    border: 1px solid #7e69fe;
+    border-radius: 15px;
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+}
+
+.projectSection .projectContainer .leftSide {
+    width: 45%;
+}
+
+.projectSection .projectContainer .leftSide img {
+    display: block;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.projectSection .projectContainer .leftSide .viewDetail {
+    cursor: pointer;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 15px;
+    border: none;
+    background-color: #7e69fe;
+    border: solid 2px #7e69fe;
+    color: white;
+    font-size: 20px;
+}
+
+.projectSection .projectContainer .rightSide {
+    width: 50%;
+}
+
+.projectSection .projectContainer .rightSide .titleTextBox {
+    display: flex;
+}
+
+.projectSection .projectContainer .rightSide .titleTextBox img {
+    width: 40px;
+}
+
+.projectSection .projectContainer .rightSide .titleTextBox .text {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.projectSection .projectContainer .detailInfoBox {
+    margin-top: 20px;
+}
+
+.projectSection .projectContainer .detailInfoBox .detailText {}
+
+.projectSection .projectContainer .detailInfoBox .detailText .text,
+.projectSection .projectContainer .detailInfoBox .detailText .list {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
