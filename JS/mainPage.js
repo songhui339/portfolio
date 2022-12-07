@@ -10,7 +10,7 @@ jQuery(document).ready(function ($) {
     타이핑 효과
     ===================
     */
-    var content = "안녕하세요 :-) \n 개발자를 꿈꾸는 최송희입니다.";
+    var content = "안녕하세요 :-) \n 개발자를 꿈꾸는 최송희입니다. \n";
     var text = document.querySelector(".text");
     var i = 0;
 
@@ -22,7 +22,7 @@ jQuery(document).ready(function ($) {
             i = 0;
         }
     }
-    setInterval(typing, 240)
+    setInterval(typing, 150)
 
     /*
     ===================
