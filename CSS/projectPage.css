@@ -4,6 +4,7 @@ projectPage CSS
 ====================================================
 */
 
+
 .projectSection {
     background-color: rgb(244, 244, 250);
     padding: 200px 0 100px 0;
@@ -63,7 +64,7 @@ projectPage CSS
 }
 
 .projectSection .projectContainer .rightSide .titleTextBox img {
-    width: 40px;
+    height: 40px;
 }
 
 .projectSection .projectContainer .rightSide .titleTextBox .text {
@@ -72,6 +73,7 @@ projectPage CSS
     font-size: 1.5rem;
     font-weight: 600;
     margin-left: 10px;
+    line-height: 1.5;
 }
 
 .projectSection .projectContainer .detailInfoBox {
@@ -85,4 +87,55 @@ projectPage CSS
     font-size: 1.2rem;
     line-height: 1.5;
     margin-bottom: 10px;
+}
+
+.projectSection .projectContainer .logoImg {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.projectSection .projectContainer .logoImg .linkIcon {
+    display: inline;
+    margin-right: 10px;
+    margin-bottom: 0;
+    width: 50px;
+    cursor: pointer;
+}
+
+.mobileReady {
+    display: none;
+}
+
+/* 반응형 작업을 위한 PC용 SECTION 숨김처리 */
+@media screen and (max-width: 980px) {
+    header, .projectSection, footer {
+        display: none;
+    }
+
+    .mobileReady {
+        display: block;
+        height: 100vh;
+        background-color: rgb(244, 244, 250);
+        text-align: center;
+    }
+
+    .mobileReady .textBox {
+        padding-top: 50%;
+    }
+
+    .mobileReady .textBox img {
+        width: 50%;
+    }
+
+    .mobileReady .textBox h2 {
+        font-size: 2rem;
+        line-height: 1.5;
+        font-weight: 600;
+        color: #7e69fe;
+    }
+
+    .mobileReady .textBox p {
+        font-size: 1.2rem;
+        line-height: 1.3;
+    }
 }

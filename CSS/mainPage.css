@@ -4,13 +4,6 @@ mainPage CSS
 ====================================================
 */
 
-/* 반응형 작업을 위한 PC용 SECTION 숨김처리 */
-@media screen and (max-width: 980px) {
-    header, .introSection, .aboutSection, .skillsSection, .careerSection, .moreSection {
-        display: none;
-    }
-}
-
 /* Section #01 Intro */
 .introSection {
     background-color: rgb(244, 244, 250);
@@ -891,4 +884,42 @@ accordion li .textBox p #linkText:hover {
     font-size: 1.4rem;
     font-weight: 600;
     padding: 5px 30px;
+}
+
+.mobileReady {
+    display: none;
+}
+
+/* 반응형 작업을 위한 PC용 SECTION 숨김처리 */
+@media screen and (max-width: 980px) {
+    header, .introSection, .aboutSection, .skillsSection, .careerSection, .projectBanner, .moreSection, footer {
+        display: none;
+    }
+
+    .mobileReady {
+        display: block;
+        height: 100vh;
+        background-color: rgb(244, 244, 250);
+        text-align: center;
+    }
+
+    .mobileReady .textBox {
+        padding-top: 50%;
+    }
+
+    .mobileReady .textBox img {
+        width: 50%;
+    }
+
+    .mobileReady .textBox h2 {
+        font-size: 2rem;
+        line-height: 1.5;
+        font-weight: 600;
+        color: #7e69fe;
+    }
+
+    .mobileReady .textBox p {
+        font-size: 1.2rem;
+        line-height: 1.3;
+    }
 }
